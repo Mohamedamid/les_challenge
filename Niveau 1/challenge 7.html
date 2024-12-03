@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/challenge7.css">
+    <title>challenge 7</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <img class="logo_CodeCraft" src="../images/codecraft.png" alt="CodeCraft">
+        </div>
+        <div>
+            <ul class="ul_NavBar">
+                <li class="li_navbar">
+                    <a href="../index.html">Accueil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="challenge4">
+            <h1>Challenge 7: Modifier emoji d'un élément au survol de la souris.</h1>
+        </div>
+            <img class="img" src="../images/emoje1.png" alt="">
+    </div>
+    <script>
+        let modale1 = document.querySelector(".img");
+        let model2 = document.querySelector(".img").src;
+        modale1.addEventListener( "mouseenter" , ()=>{
+            document.querySelector(".img").src = "../images/emoje2.png";
+        })
+        modale1.addEventListener( "mouseout" , ()=>{
+            document.querySelector(".img").src = model2;
+        })
+    </script>
+</body>
+</html>

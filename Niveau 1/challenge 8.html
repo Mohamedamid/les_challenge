@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/challenge8.css">
+    <title>challenge 8</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <img class="logo_CodeCraft" src="../images/codecraft.png" alt="CodeCraft">
+        </div>
+        <div>
+            <ul class="ul_NavBar">
+                <li class="li_navbar">
+                    <a href="../index.html">Accueil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="challenge4">
+            <h1>Challenge 8: Valider un champ de saisie pour qu'il contienne au moins 5 caractères.</h1>
+        </div>
+        <div class="div_input">
+            <input id="input" type="text">
+            <input class="input" type="button" value="Click here">
+        </div>
+    </div>
+    <script>
+        let input = document.querySelector("#input");
+        let input1 = document.querySelector(".input");
+        input1.addEventListener( "click" , ()=>{
+            if(input.value.length>=5){
+                alert('Bravo, vous avez saisi plus de 5 lettres');
+            }else if(input.value.length<=0){
+                alert("Vous n'avez saisi aucune lettre");
+            }
+            else{
+                alert('Saisissez au moins plus de 5 caractères');
+            }
+        })
+    </script>
+</body>
+</html>

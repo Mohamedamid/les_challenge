@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/challenge9.css">
+    <title>challenge 9</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <img class="logo_CodeCraft" src="../images/codecraft.png" alt="CodeCraft">
+        </div>
+        <div>
+            <ul class="ul_NavBar">
+                <li class="li_navbar">
+                    <a href="../index.html">Accueil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="challenge4">
+            <h1>Challenge 9: Ajouter une classe CSS à un élément lors d'un clic.</h1>
+            <div class="change_moi">Change-moi</div>
+        </div>
+        <div class="div_input">
+            <input class="input1" type="button" value="Add background-color red">
+            <input class="input2" type="button" value="Add width 100px">
+            <input class="input3" type="button" value="Add height 100px">
+        </div>
+    </div>
+    <script>
+        let change_moi = document.querySelector(".change_moi");
+        let input1 = document.querySelector(".input1");
+        let input2 = document.querySelector(".input2");
+        let input3 = document.querySelector(".input3");
+        input1.addEventListener( "click" , ()=>{
+            change_moi.style.backgroundColor = "red";
+        })
+        input2.addEventListener( "click" , ()=>{
+            change_moi.style.width = "200px";
+        })
+        input3.addEventListener( "click" , ()=>{
+            change_moi.style.height = "200px";
+        })
+    </script>
+</body>
+</html>

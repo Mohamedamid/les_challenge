@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/challenge2.css">
+    <title>challenge 2</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <img class="logo_CodeCraft" src="../images/codecraft.png" alt="CodeCraft">
+        </div>
+        <div>
+            <ul class="ul_NavBar">
+                <li class="li_navbar">
+                    <a href="../index.html">Accueil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="challenge2">
+        <h1>Challenge 2: Afficher une alerte avec un message personnalisé lors d'un clic sur un bouton.</h1>
+        <button>Click Here</button>
+    </div>
+    <script>
+        let button = document.querySelector("button")
+        button.addEventListener("click",()=>{
+            alert("Le bouton a été pressé avec succès.");
+        })
+    </script>
+</body>
+</html>

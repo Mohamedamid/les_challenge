@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/challenge3.css">
+    <title>challenge 3</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <img class="logo_CodeCraft" src="../images/codecraft.png" alt="CodeCraft">
+        </div>
+        <div>
+            <ul class="ul_NavBar">
+                <li class="li_navbar">
+                    <a href="../index.html">Accueil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="challenge3">
+        <h1>Challenge 3: Afficher la position de la souris sur la page en temps réel.</h1>
+        <div class="x_y">
+            <p>X : <span class="x"></span></p>
+            <p>y : <span class="y"></span></p>
+        </div>
+        
+    </div>
+    <script>
+        window.addEventListener("mousemove", (e) => {
+            let x = e.clientX;
+            let y = e.clientY;
+            document.getElementsByClassName("x")[0].textContent = x;
+            document.getElementsByClassName("y")[0].textContent = y;
+        });
+    </script>
+</body>
+</html>

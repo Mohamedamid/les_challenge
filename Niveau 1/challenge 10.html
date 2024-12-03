@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/challenge10.css" />
+    <title>challenge 10</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div>
+        <img
+          class="logo_CodeCraft"
+          src="../images/codecraft.png"
+          alt="CodeCraft"
+        />
+      </div>
+      <div>
+        <ul class="ul_NavBar">
+          <li class="li_navbar">
+            <a href="../index.html">Accueil</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="challenge4">
+        <h1>
+          Challenge 10: Créer une minuterie qui affiche un compte à rebours sur
+          la page.
+        </h1>
+        <p class="change_moi">minuterie :<span class="minuterie"></span>:</p>
+      </div>
+      <div class="div_input">
+        <input class="input" type="number" />
+        <input class="input1" type="button" value="Minuterie" />
+      </div>
+    </div>
+    <script>
+      let minuterie = document.querySelector(".minuterie");
+      let input = document.querySelector(".input");
+      let input1 = document.querySelector(".input1");
+
+      input1.addEventListener("click", () => {
+          let cnt = parseInt(input.value);
+
+        if (cnt <= 0) {
+          alert("entrer un nombre valide supérieur à 0");
+          return;
+        } else {
+          alert("commence minuterie");
+        }
+
+        let mntr = setInterval(() => {
+          if (cnt > 0) {
+            minuterie.textContent = cnt;
+            cnt--;
+          } else {
+            minuterie.textContent = "final minuterie";
+            clearInterval(mntr);
+          }
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>

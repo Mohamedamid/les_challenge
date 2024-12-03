@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/challenge5.css">
+    <title>challenge 5</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <img class="logo_CodeCraft" src="../images/codecraft.png" alt="CodeCraft">
+        </div>
+        <div>
+            <ul class="ul_NavBar">
+                <li class="li_navbar">
+                    <a href="../index.html">Accueil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="challenge4">
+            <h1>Challenge 5: Compter le nombre de fois qu'un bouton est cliqué.</h1>
+            <p>Click namber : <span id="counter">0</span></p>
+            <button id="button">Click Here</button>
+        </div>
+    </div>
+    <script>
+        let cnt = 0;
+        let counter = document.getElementById("counter");
+        let button = document.getElementById("button");
+        button.addEventListener("click",()=>{
+            cnt ++;
+            counter.textContent = cnt;
+        })
+    </script>
+</body>
+</html>

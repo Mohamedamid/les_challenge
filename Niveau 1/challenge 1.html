@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/challenge1.css">
+    <title>challenge 1</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <img class="logo_CodeCraft" src="../images/codecraft.png" alt="CodeCraft">
+        </div>
+        <div>
+            <ul class="ul_NavBar">
+                <li class="li_navbar">
+                    <a href="../index.html">Accueil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="challenge1">
+        <h1>Challenge 1: Changer la couleur du corps de la page lors d'un clic.</h1>
+        <p id="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias quas facilis blanditiis, ut tenetur fuga nostrum consequatur rem dolore modi nesciunt inventore dignissimos nemo totam autem esse eveniet cumque?
+            Quam minima recusandae laudantium doloremque nam alias ullam expedita perferendis, repudiandae ad corrupti ratione sunt maiores voluptate vitae libero doloribus quis deserunt sapiente iusto voluptatem natus. Itaque, asperiores deleniti. Repellendus?
+            Laudantium omnis deserunt repellendus unde quaerat vel eligendi amet dolor, illo, eos sit molestias porro quae in fugit officia cumque tenetur accusantium expedita laborum. Eius temporibus nesciunt sit molestias optio.
+        </p>
+        <input type="color" id="color_" name="color" value="#ff0000">
+    </div>
+    <script>
+        let color_ = document.getElementById("color_");
+        let paragraph = document.getElementById("paragraph");
+        color_.addEventListener("input", () => {
+            paragraph.style.color = color_.value;
+        });
+    </script>
+</body>
+</html>

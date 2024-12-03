@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/challenge6.css">
+    <title>challenge 6</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <img class="logo_CodeCraft" src="../images/codecraft.png" alt="CodeCraft">
+        </div>
+        <div>
+            <ul class="ul_NavBar">
+                <li class="li_navbar">
+                    <a href="../index.html">Accueil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="challenge4">
+            <h1>Challenge 6: Alterner la visibilité d'un élément lors d'un clic (montrer/cacher).</h1>
+            <button id="button">Click Here</button>
+        </div>
+        <div class="modale">
+            <p>une boîte modale</p>
+        </div>
+    </div>
+    <script>
+        let button = document.querySelector("#button");
+        let modale = document.querySelector(".modale");
+        let cnt = 1;
+        button.addEventListener( "click" , ()=>{
+            cnt ++;
+            if(cnt%2==0){
+                modale.style.visibility = "hidden";
+            }else{
+                modale.style.visibility = "visible";
+            }
+        })
+    </script>
+</body>
+</html>
